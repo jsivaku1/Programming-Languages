@@ -1,0 +1,31 @@
+
+// Grammar for arithment expressions.  Not suitable for
+// recursive descent parsing
+
+  program
+    :  EOF
+    |  aaa NL program
+    ;
+  expr
+    :  bbb ADD_OP term
+    |  expr SUB_OP term
+    |  term
+    ;
+  term
+    :  term MUL_OP factor
+    |  ccc DIV_OP factor
+    |  factor
+    ;
+  factor
+    :  simple EXP_OP factor
+    |  simple
+    ;
+  simple
+    : SIMPLE_OP simple 
+    |  INTEGER
+    |  LPAREN expr RPAREN
+    ;
+  
+
+
+

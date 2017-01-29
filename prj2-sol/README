@@ -1,0 +1,17 @@
+Name:		Jayanth Sivakumar
+B-Number:	B00615297
+Email:		jsivaku1@binghamton.edu
+
+
+
+
+
+The scheme programming is done using racket in the remote location. As per all the test cases it is working. 
+
+Execution method:
+
+(load "prj2-sol.scm")
+
+and the arguments can be passed to the procedures. 
+
+

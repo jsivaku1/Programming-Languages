@@ -1,0 +1,2 @@
+
+temp(X):- write(X).
